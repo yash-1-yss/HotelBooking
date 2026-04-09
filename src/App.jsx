@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import HomePage from './pages/HomePage.jsx';
 import HotelDetailsPage from './pages/HotelDetailsPage.jsx';
@@ -261,7 +261,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="min-h-screen bg-stone-950 text-white">
         {currentUser ? (
           <Navbar
@@ -333,7 +333,7 @@ function App() {
           <Route path="*" element={<Navigate to={currentUser ? '/' : '/auth'} replace />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
