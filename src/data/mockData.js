@@ -1,0 +1,123 @@
+export const hotels = [
+  {
+    hotel_id: 'HTL-101',
+    hotel_name: 'Sea Breeze Hotel',
+    location: 'Goa',
+    rating: 4.7,
+    price_from: 4200,
+    image: 'https://images.unsplash.com/photo-1753012442706-18189d7be314?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000',
+    description: 'A relaxed beachside stay with bright rooms, quick airport access, and sunset dining.',
+    amenities: ['Free Wi-Fi', 'Pool', 'Breakfast', 'Airport Pickup'],
+  },
+  {
+    hotel_id: 'HTL-102',
+    hotel_name: 'City Central Inn',
+    location: 'Mumbai',
+    rating: 4.4,
+    price_from: 5100,
+    image: 'https://images.unsplash.com/photo-1758805768368-0e75b108b9f5?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000',
+    description: 'A convenient hotel for business and short city breaks near shopping and transport hubs.',
+    amenities: ['Free Wi-Fi', 'Parking', 'Restaurant', '24/7 Front Desk'],
+  },
+  {
+    hotel_id: 'HTL-103',
+    hotel_name: 'Royal Heritage Stay',
+    location: 'Jaipur',
+    rating: 4.8,
+    price_from: 4600,
+    image: 'https://images.unsplash.com/photo-1723465308831-29da05e011f3?auto=format&fit=crop&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000',
+    description: 'Traditional architecture, warm hospitality, and easy access to forts and local markets.',
+    amenities: ['Courtyard', 'Breakfast', 'Cultural Tour Desk', 'Family Rooms'],
+  },
+  {
+    hotel_id: 'HTL-104',
+    hotel_name: 'Hill View Retreat',
+    location: 'Manali',
+    rating: 4.6,
+    price_from: 3900,
+    image: 'https://images.unsplash.com/photo-1766384093130-3b7662a3f97b?fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&ixlib=rb-4.1.0&q=60&w=3000',
+    description: 'A cozy mountain property with scenic balconies, fireplace lounges, and adventure support.',
+    amenities: ['Mountain View', 'Bonfire Area', 'Room Service', 'Travel Desk'],
+  },
+];
+
+export const rooms = [
+  {
+    room_id: 'RM-201',
+    hotel_id: 'HTL-101',
+    room_type: 'Deluxe Room',
+    price_per_night: 4200,
+    beds: '1 King Bed',
+    guests: 2,
+    availability: true,
+  },
+  {
+    room_id: 'RM-202',
+    hotel_id: 'HTL-101',
+    room_type: 'Family Suite',
+    price_per_night: 6800,
+    beds: '2 Queen Beds',
+    guests: 4,
+    availability: true,
+  },
+  {
+    room_id: 'RM-203',
+    hotel_id: 'HTL-102',
+    room_type: 'Executive Room',
+    price_per_night: 5100,
+    beds: '1 King Bed',
+    guests: 2,
+    availability: true,
+  },
+  {
+    room_id: 'RM-204',
+    hotel_id: 'HTL-102',
+    room_type: 'Twin Room',
+    price_per_night: 4700,
+    beds: '2 Single Beds',
+    guests: 2,
+    availability: false,
+  },
+  {
+    room_id: 'RM-205',
+    hotel_id: 'HTL-103',
+    room_type: 'Heritage Suite',
+    price_per_night: 4600,
+    beds: '1 King Bed',
+    guests: 3,
+    availability: true,
+  },
+  {
+    room_id: 'RM-206',
+    hotel_id: 'HTL-104',
+    room_type: 'Mountain Loft',
+    price_per_night: 3900,
+    beds: '1 Queen Bed',
+    guests: 2,
+    availability: true,
+  },
+];
+
+export const users = [
+  {
+    user_id: 'USR-1',
+    username: 'Yash Gupta',
+    email: 'yash.gupta@example.com',
+    phone: '+91 98765 43210',
+    password: '123456',
+  },
+];
+
+export const bookings = [
+  {
+    booking_id: 'BKG-1',
+    user_id: 'USR-1',
+    room_id: 'RM-205',
+    check_in_date: '2026-04-18',
+    check_out_date: '2026-04-21',
+    guest_name: 'Yash Gupta',
+    guests_count: 2,
+    total_price: 13800,
+    status: 'Confirmed',
+  },
+];
